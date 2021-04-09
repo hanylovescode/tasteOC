@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TOC</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0/default/snipcart.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <script src="https://browser.sentry-cdn.com/5.16.1/bundle.min.js" integrity="sha384-XeIbINcUQP10HtmVHwZigannjNDpoQRe+uhAoW9J5HU5dHFpilP164LjqO78xtIB" crossorigin="anonymous"></script>  
+  <script>
+    Sentry.init({ dsn: 'https://d6352c3a17124246a0effb6282e65e3e@o108936.ingest.sentry.io/5269230' });
+  </script>
+
+  <script src="/assets/main.js"></script>
+</head>
