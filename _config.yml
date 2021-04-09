@@ -52,5 +52,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #   - vendor/ruby/
 collections:
   - products
-url: hanycopes.github.io
-   baseurl: /tasteOC
+
+# url: hanycopes.github.io
+#    baseurl: /tasteOC
