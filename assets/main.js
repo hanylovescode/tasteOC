@@ -5,8 +5,10 @@ window.addEventListener('DOMContentLoaded', function(event) {
             var button = evt.target.parentNode.querySelector('.buy-button')
             var qty = parseInt(evt.target.value)
             button.setAttribute('data-item-quantity', qty)
+            let price = parseFloat(button.getAttribute('data-item-price'))
+            let final = price*qty
             var label = button.innerHTML
-            label = label.replace(/\d+/, evt.target.value)
+            label = label.replace(/\d+/, final)
             if(qty > 1){
                 label = label.replace(/copy/, "copies")
             }
